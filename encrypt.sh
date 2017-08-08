@@ -34,12 +34,3 @@ then
 	echo "File has been formatted to sha1sum!"
 fi
 
-if [[ "${encryption}" = 'sha256' ]];
-then
-        for f in "${@}"; do
-                sha256sum < "${f}" > "${f}.sha256"
-        done
-
-        echo "File has been formatted to sha256sum!"
-fi
-
